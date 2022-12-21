@@ -8,7 +8,8 @@ export function createMessageCard(
   repoName: string,
   sha: string,
   repoUrl: string,
-  timestamp: string
+  timestamp: string,
+  subMessage: string
 ): any {
   let avatar_url =
     'https://www.gravatar.com/avatar/05b6d8cc7c662bf81e01b39254f88a48?d=identicon'
@@ -30,7 +31,7 @@ export function createMessageCard(
           7
         )})** on [${repoName}](${repoUrl})`,
         activityImage: avatar_url,
-        activitySubtitle: `by ${commit.data.commit.author.name} [(@${author.login})](${author.html_url}) on ${timestamp}`
+        activitySubtitle: `by ${commit.data.commit.author.name} [(@${author.login})](${author.html_url}) on ${timestamp} deployed : ${subMessage}`
       }
     ],
     potentialAction: [
