@@ -21,7 +21,8 @@ inputs:
     description: 'Timezone (ex. America/Denver)'
     required: false
   notification-sub-message: 
-    description
+    description: 'description of message'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'
