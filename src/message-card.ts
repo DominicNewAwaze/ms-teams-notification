@@ -31,7 +31,8 @@ export function createMessageCard(
           7
         )})** on [${repoName}](${repoUrl})`,
         activityImage: avatar_url,
-        activitySubtitle: `by ${commit.data.commit.author.name} [(@${author.login})](${author.html_url}) on ${timestamp} deployed : ${subMessage}`
+        activitySubtitle: `by ${commit.data.commit.author.name} [(@${author.login})](${author.html_url}) on ${timestamp} ${
+          subMessage.length > 0 ? "\n deployed : " + subMessage : '' }`
       }
     ],
     potentialAction: [
