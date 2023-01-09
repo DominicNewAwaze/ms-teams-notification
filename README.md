@@ -2,6 +2,8 @@
   <a href="https://github.com/jdcargile/ms-teams-notification/actions"><img alt="ms-teams-notification status" src="https://github.com/jdcargile/ms-teams-notification/workflows/Build%20&%20Test/badge.svg"></a>
 </p>
 
+
+
 # Microsoft Teams Notification 
 A GitHub Action that sends customizable notifications to a dedicated Microsoft Teams channel.
 
